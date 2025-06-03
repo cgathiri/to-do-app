@@ -1,0 +1,218 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(to bottom right, #ffe6f0, #e0f7fa);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+}
+
+h1 {
+    font-family: 'Cherry Swash', cursive;
+    color: #ff85a2;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px #fff;
+}
+
+form {
+    background-color: #ffffffcc;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    width: 320px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #f2d1d1;
+    border-radius: 12px;
+    background-color: #fff0f6;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #ffb6c1;
+    outline: none;
+    background-color: #fff7fb;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #f2d1d1;
+    border-radius: 12px;
+    background-color: #fff0f6;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[type="email"]:focus {
+    border-color: #ffb6c1;
+    outline: none;
+    background-color: #fff7fb;
+}
+button {
+    width: 100%;
+    background-color: #ffcce7;
+    color: #8b005d;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ffb3dd;
+    transform: scale(1.15);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+li {
+    background-color: #fffafc;
+    border: 1px solid #fddde6;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 15px 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #5d3a3a;
+    gap: 10px;
+}
+
+.checkbox-form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 30px;
+}
+
+
+li input[type="checkbox"] {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+}
+
+li span {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+li span.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+a {
+    margin-top: 20px;
+    color: #ba68c8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.task-item form {
+    margin: 0;
+}
+
+.delete-form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100%;
+}
+
+.delete-form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    margin: 0;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease;
+}
+
+.delete-btn:hover {
+    background: darkred;
+    transform: scale(1.2);
+}
+
+.logout-form {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.logout-btn {
+    background-color: #ba68c8;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+}
+
+.logout-btn:hover {
+    background-color: #a249b0;
+    transform: scale(1.05);
+}

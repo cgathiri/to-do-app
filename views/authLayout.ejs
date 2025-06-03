@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= title %></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Cherry+Swash&display=swap" rel="stylesheet">
+</head>
+<body>
+    <% if (user) { %>
+        <p>Welcome, <%= user.username %> | <a href="/logout">Logout</a></p>
+    <% } %>
+
+    <% if (message && message.error) { %>
+        <p style="color: red;"><%= message.error[0] %></p>
+    <% } %>
+    <% if (message && message.success) { %>
+        <p style="color: green;"><%= message.success[0] %></p>
+    <% } %>
+
+    <% include(body) %>
+</body>
+</html>
